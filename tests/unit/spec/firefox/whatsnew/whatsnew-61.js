@@ -3,7 +3,7 @@
  * Sinon docs: http://sinonjs.org/docs/
  */
 
-/* global describe, beforeEach, afterEach, it, expect */
+/* global describe, beforeEach, it, expect */
 
 describe('whatsnew-61.js', function () {
     'use strict';
