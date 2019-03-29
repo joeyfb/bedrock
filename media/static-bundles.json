@@ -730,7 +730,13 @@
     },
     {
       "files": [
-        "css/firefox/releasenotes.scss"
+        "css/firefox/enterprise-sla.scss"
+      ],
+      "name": "firefox-enterprise-sla"
+    },
+    {
+      "files": [
+        "css/firefox/releasenotes-firefox.less"
       ],
       "name": "firefox_releasenotes"
     },
