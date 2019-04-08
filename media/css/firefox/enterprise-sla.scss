@@ -218,8 +218,19 @@ $border: 2px solid $color-gray-20;
             vertical-align: top;
         }
 
+        th {
+            font-weight: normal;
+
+            h4 {
+                @include text-body-sm;
+                color: $body-purple;
+                font-family: system-ui, sans-serif;
+                line-height: inherit;
+                margin: 0 0 1em;
+            }
+        }
+
         %severity {
-            background: purple;
             content: '';
             display: block;
             height: 100%;

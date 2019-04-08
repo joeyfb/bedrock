@@ -161,8 +161,8 @@
           <tbody>
             <tr class="t-severity-red">
               <th>
-                {{ _('Severity 1 Management (Defect only - High Impact AND High Urgency)') }}
-                {{ _('Definition: Significant defect with no workaround.') }}
+                <h4>{{ _('Severity 1 Management (Defect only - High Impact AND High Urgency)') }}</h4>
+                <p>{{ _('Definition: Significant defect with no workaround.') }}</p>
               </th>
               <td>{{ _('1 hour') }}</td>
               <td>{{ _('4 hours') }}</td>
@@ -172,8 +172,8 @@
             </tr>
             <tr class="t-severity-yellow">
               <th>
-                {{ _('Severity 2 Management (Defects only.)') }}
-                {{ _('Definition: Significant defect with a reasonable workaround.') }}
+                <h4>{{ _('Severity 2 Management (Defects only.)') }}</h4>
+                <p>{{ _('Definition: Significant defect with a reasonable workaround.') }}</p>
               </th>
               <td>{{ _('2 hours') }}</td>
               <td>{{ _('8 hours') }}</td>
@@ -181,7 +181,7 @@
             </tr>
             <tr class="t-severity-light-green">
               <th>
-                {{ _('Severity 3 Support request on customization or deployment') }}
+                <h4>{{ _('Severity 3 Support request on customization or deployment') }}</h4>
               </th>
               <td>{{ _('8 hours') }}</td>
               <td>{{ _('2 business days') }}</td>
@@ -189,8 +189,8 @@
             </tr>
             <tr class="t-severity-green">
               <th>
-                {{ _('Severity 4 Feature request') }}
-                {{ _('Definition: Customer requests for new features.') }}
+                <h4>{{ _('Severity 4 Feature request') }}</h4>
+                <p>{{ _('Definition: Customer requests for new features.') }}</p>
               </th>
               <td>{{ _('2 business days') }}</td>
               <td>{{ _('5 business days') }}</td>
@@ -362,7 +362,7 @@
           <tbody>
             <tr class="t-severity-red">
               <th>
-                <p>{{ _('Severity 1 Management (Defect only - High Impact AND High Urgency)') }}</p>
+                <h4>{{ _('Severity 1 Management (Defect only - High Impact AND High Urgency)') }}</h4>
                 <p>{{ _('All severity one incidents will be given immediate attention and risk mitigation strategies will be executed.') }}</p>
                 <p>{{ _('Ticket types that can be severity 1: Software defect') }}</p>
               </th>
@@ -373,7 +373,7 @@
             </tr>
             <tr class="t-severity-yellow">
               <th>
-                <p>{{ _('Severity 2 management (Defects only.)') }}</p>
+                <h4>{{ _('Severity 2 Management (Defects only.)') }}</h4>
                 <p>{{ _('High Impact AND Medium Urgency or Medium Impact AND High Urgency') }}</p>
                 <p>{{ _('Ticket types that can be severity 2: Software defect') }}</p>
               </th>
@@ -384,7 +384,7 @@
             </tr>
             <tr class="t-severity-light-green">
               <th>
-                <p>{{ _('Severity 3 Management') }}</p>
+                <h4>{{ _('Severity 3 Management') }}</h4>
                 <p>{{ _('Issues that are not critical to Firefox stability, security or compatibility with websites on the Enterprise current deployment.') }}</p>
                 <p>{{ _('Ticket types that can be severity 3: Support request on customization or deployment') }}</p>
               </th>
@@ -394,7 +394,7 @@
             </tr>
             <tr class="t-severity-green">
               <th>
-                <p>{{ _('Severity 4 Feature request') }}</p>
+                <h4>{{ _('Severity 4 Feature request') }}</h4>
                 <p>{{ _('Customer requests for new features. Ticket will be resolved with a reference to an opened Bugzilla ticket for later action.') }}</p>
                 <p>{{ _('Ticket types that can be severity 4: Feature request') }}</p>
               </th>
@@ -548,8 +548,8 @@
 
         <ul class="mzp-u-list-styled">
           <li>
-            {% trans salesforce='https://salesforce.mozilla.com' %}
-            Incidents will be captured via the Mozilla Enterprise Client Service Desk portal at <a href="{{ salesforce }}">https://salesforce.mozilla.com</a>.
+            {% trans servicedesk='https://mozilla.force.com/enterprise' %}
+            Incidents will be captured via the Mozilla Enterprise Client Service Desk portal at <a href="{{ servicedesk }}">https://mozilla.force.com/enterprise</a>.
             {% endtrans %}
           </li>
           <li>
@@ -609,5 +609,5 @@
 {% endblock %}
 
 {% block js %}
-  {{ js_bundle('privacy_protocol') }}
+  {{ js_bundle('firefox-enterprise-sla') }}
 {% endblock %}

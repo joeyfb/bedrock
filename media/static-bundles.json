@@ -736,7 +736,7 @@
     },
     {
       "files": [
-        "css/firefox/releasenotes-firefox.less"
+        "css/firefox/releasenotes.scss"
       ],
       "name": "firefox_releasenotes"
     },
@@ -1613,6 +1613,12 @@
         "js/firefox/election-build.js"
       ],
       "name": "firefox_election_build"
+    },
+    {
+      "files": [
+        "js/firefox/enterprise-sla.js"
+      ],
+      "name": "firefox-enterprise-sla"
     }
   ]
 }
